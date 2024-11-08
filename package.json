@@ -1,0 +1,19 @@
+{
+  "name": "@moreauf/npm-bidon",
+  "version": "0.0.2",
+  "description": "I’m learning to make npm packages. What are you looking at? Shoo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grillonbleu/npm-bidon.git"
+  },
+  "author": "moreauf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grillonbleu/npm-bidon/issues"
+  },
+  "homepage": "https://github.com/grillonbleu/npm-bidon#readme"
+}
