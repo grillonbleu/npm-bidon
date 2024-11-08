@@ -1,12 +1,13 @@
-function bidon(name: string|undefined): string {
-    return `Hello, ${name || 'world'}.`;
-}
-
-function bidonFra(name: string|undefined): string {
-    return `Allô, ${name || 'monde'}!!!`;
-}
+import bidon from "./bidons/bidon";
+import bidonFra from "./bidons/bidonFra";
+import bidonPt from "./bidons/bidonPt";
+import {createRandomPage} from "./fakeur/contenu";
+import {createPerson} from "./fakeur/truc";
 
 export {
     bidon,
-    bidonFra
+    bidonFra,
+    bidonPt,
+    createPerson,
+    createRandomPage
 }
