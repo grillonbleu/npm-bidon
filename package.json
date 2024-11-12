@@ -1,5 +1,5 @@
 {
-  "name": "@moreauf/npm-bidon",
+  "name": "@grillonbleu/npm-bidon",
   "version": "0.0.14",
   "description": "I’m learning to make npm packages. What are you looking at? Shoo.",
   "type": "module",
@@ -19,17 +19,17 @@
       }
     }
   },
-  "bin":  {
+  "bin": {
     "bidon-page-seed": "dist/seed-pages.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "vite",
     "build": "vue-tsc -b && vite build && node ./extra-build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grillonbleu/npm-bidon.git"
+    "url": "https://github.com/grillonbleu/npm-bidon.git"
   },
   "author": "moreauf",
   "license": "ISC",
@@ -42,11 +42,15 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "typescript": "^5.6.3",
     "vite": "^5.4.10",
+    "vitest": "^2.1.4",
     "vue-tsc": "^2.1.10"
   },
   "dependencies": {
     "@faker-js/faker": "^9.2.0",
     "vite-plugin-dts": "^4.3.0",
     "vue": "^3.5.12"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
